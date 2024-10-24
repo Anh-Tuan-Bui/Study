@@ -1,0 +1,12 @@
+Arduino
+BeagleBoard
+Cypress IoT Products
+Discovery STM32MP157C Crypto Board
+Flutter
+Microduino
+NVIDIA Jetson Nano
+Onion Omega2
+OpenMote
+Raspberry Pi
+SODAQ
+UDOO

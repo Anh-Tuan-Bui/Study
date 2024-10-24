@@ -1,0 +1,40 @@
+@import url(./themes.css);
+@import url(../node_modules/primeflex/primeflex.css);
+@import url(../node_modules/primeicons/primeicons.css);
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bg-input {
+    background: transparent;
+}
+
+.focus-input--primary:focus-within {
+    border-color: #6dd3c8 !important;
+}
+
+.focus-input--secondary:focus-within {
+    border: 1px solid #616161 !important;
+}
+
+.border-collapse {
+    border-collapse: collapse;
+}
+
+.skeleton {
+    opacity: 0.7;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background: hsl(200, 20%, 95%);
+    }
+}

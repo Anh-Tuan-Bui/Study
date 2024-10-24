@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigCorp</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="navbar" class="flex justify-content-between fixed top-0 left-0 right-0 text-2xl line-height-3 px-4 py-3 md:px-6 lg:px-8 bg-white z-1">
+        <div id="logo" class="px-3 py-1 cursor-pointer">
+            <i class="pi pi-home"></i>
+        </div>
+        
+        <div class="flex">
+            <div id="product" class="border-round px-3 py-1 mx-1 hover:bg-teal-100 cursor-pointer">
+                <div>Sản phẩm</div>
+                <ul id="product-nav" class="list-none absolute top-100 bg-teal-50 border-round-md px-3 py-3 shadow-2 hidden">
+                    <li class="border-round px-3 py-1 hover:bg-teal-100">
+                        <a href="" class="no-underline">Dòng sản phẩm</a>
+                    </li>
+                    <li class="border-round px-3 py-1 hover:bg-teal-100">
+                        <a href="" class="no-underline">Thống kê</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="facility" class="border-round px-3 py-1 mx-1 hover:bg-teal-100 cursor-pointer">Cơ sở sản xuất</div>
+            <div id="agency" class="border-round px-3 py-1 mx-1 hover:bg-teal-100 cursor-pointer">Đại lý phân phối</div>
+            <div id="center" class="border-round px-3 py-1 mx-1 hover:bg-teal-100 cursor-pointer">Trung tâm bảo hành</div>
+            <div id="account" class="border-round px-3 py-1 mx-1 hover:bg-teal-100 cursor-pointer">Cấp tài khoản</div>
+        </div>
+
+        <div id="user" class="px-3 py-1 border-round hover:bg-teal-100 cursor-pointer">
+            <i class="pi pi-user" href=""></i>
+        </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- CONTAINER -->
+    <div class="pt-8 bg-bluegray-100" style="height: calc(100vh - 80px);">
+        <div class="m-4 text-2xl line-height-3">Ban điều hành</div>
+        
+        <div class="px-2 py-3 m-4 md:px-3 lg:px-4 bg-white border-round" style="height: calc(100% - 148px);">
+            <div class="my-3 flex justify-content-between align-items-center">
+                <form action="" class="w-6">
+                    <div class="flex align-items-center w-full bg-teal-200 hover:bg-teal-300 focus-input--secondary border-round-2xl">
+                        <div class="pi pi-search px-3 py-2"></div>
+                        <input type="search" id="search-bar" class="px-1 w-11 border-none outline-none bg-input" placeholder="Tìm kiếm...">
+                    </div>
+                </form>
+                <div id="add-business" class="flex align-items-center py-1 h-2rem text-base bg-teal-300 hover:bg-teal-500 border-round">
+                    <div class="pi pi-plus pl-2 pr-1"></div>
+                    <div class="pl-1 pr-2 cursor-pointer">Thêm mới</div>
+                </div>
+            </div>
+            <div class="overflow-auto" style="height: inherit;">
+                <table class="w-full border-primary border-collapse">
+                    <thead class="text-left sticky top-0 z-1 surface-200">
+                        <tr class="h-3rem border-bottom-1 border-primary text-xl white-space-nowrap overflow-hidden text-overflow-ellipsis">
+                            <th class="w-1rem px-3 border-right-1 border-primary text-center">
+                                <input type="checkbox" name="" id="select-all" class="cursor-pointer">
+                            </th>
+                            <th class="w-5rem px-3 border-right-1 border-primary">Mã đơn vị</th>
+                            <th class="w-15rem px-3 border-right-1 border-primary">Tên đơn vị</th>
+                            <th class="w-5rem px-3 border-right-1 border-primary">Khu vực</th>
+                            <th class="px-3">Địa chỉ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="h-3rem border-bottom-1 border-primary hover:bg-teal-50 text-base white-space-nowrap overflow-hidden text-overflow-ellipsis cursor-pointer">
+                            <td class="px-3 border-right-1 border-primary text-center">                                
+                                <div class="skeleton w-full h-1rem border-round-sm"></div>
+                            </td>
+                            <td class="px-3 border-right-1 border-primary">
+                                <div class="skeleton w-full h-1rem border-round-sm"></div>
+                            </td>
+                            <td class="px-3 border-right-1 border-primary">
+                                <div class="skeleton w-full h-1rem border-round-sm"></div>
+                            </td>
+                            <td class="px-3 border-right-1 border-primary">
+                                <div class="skeleton w-full h-1rem border-round-sm"></div>
+                            </td>
+                            <td class="px-3">
+                                <div class="skeleton w-full h-1rem border-round-sm"></div>
+                            </td>
+                        </tr>                                            
+                    </tbody>
+                </table>
+            </div>
+            <div class="my-2 py-3 h-3rem flex align-items-center justify-content-between border-top-1 border-primary">
+                <div id="total-record"></div>
+                <div class="flex">
+                    <div class="relative">
+                        <div id="page" class="mx-3 p-3 flex align-items-center border-1 border-round border-gray-300 hover:bg-gray-100 cursor-pointer">
+                            <div id="option" class="mr-3">20 bản ghi trên 1 trang</div>
+                            <i class="pi pi-chevron-up hidden"></i>
+                            <i class="pi pi-chevron-down"></i>
+                        </div>
+                        <div id="page-options" class="absolute bottom-100 mx-3 py-2 w-10 bg-teal-50 border-round z-1 shadow-2 hidden">
+                            <div class="mx-3 p-2 hover:bg-teal-100 border-round cursor-pointer">20 bản ghi trên 1 trang</div>
+                            <div class="mx-3 p-2 hover:bg-teal-100 border-round cursor-pointer">30 bản ghi trên 1 trang</div>
+                            <div class="mx-3 p-2 hover:bg-teal-100 border-round cursor-pointer">50 bản ghi trên 1 trang</div>
+                        </div>
+                    </div>
+                    <i id="back-page" class="mx-3 py-3 pi pi-chevron-left cursor-pointer"></i>
+                    <i id="next-page" class="mx-3 py-3 pi pi-chevron-right cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+        <!-- END GENERAL CONTAINER -->
+
+        <!-- BUSINESS INFORMATION -->
+        <div id="business-form" class="hidden align-items-center justify-content-center fixed top-0 right-0 bottom-0 left-0 bg-black-alpha-10 z-1">
+            <div class="dialog w-8 h-auto bg-white">
+                <div class="dialog__container p-4">
+                    <div class="dialog__header flex align-items-center justify-content-between mb-5">
+                        <div class="dialog__title text-2xl line-height-3 font-bold">Thông tin doanh nghiệp</div>
+                        <i id="close-business" class="pi pi-times cursor-pointer"></i>
+                    </div>
+                    <div class="dialog__body">
+                        <div class="grid">
+                            <div class="col-6">
+                                <div class="grid">
+                                    <div class="col-6">
+                                        <div class="font-bold mb-1">
+                                            Mã <span class="text-red-500">*</span>
+                                        </div>
+                                        <div class="w-full h-2rem border-1 border-round-sm border-gray-400 focus-input--primary">
+                                            <input type="text" id="code" class="w-11 h-full pl-3 border-none outline-none bg-input" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="font-bold mb-1">
+                                            Khu vực <span class="text-red-500">*</span>
+                                        </div>
+                                        <div class="w-full h-2rem border-1 border-round-sm border-gray-400 focus-input--primary">
+                                            <input type="text" id="region" class="w-11 h-full pl-3 border-none outline-none bg-input" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div>
+                                    <div class="font-bold mb-1">
+                                        Tên <span class="text-red-500">*</span>
+                                    </div>
+                                    <div class="w-full h-2rem border-1 border-round-sm border-gray-400 focus-input--primary">
+                                        <input type="text" id="name" class="w-11 h-full pl-3 border-none outline-none bg-input" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-bold mb-1">
+                                Địa chỉ <span class="text-red-500">*</span>
+                            </div>
+                            <div class="w-full h-2rem border-1 border-round-sm border-gray-400 focus-input--primary">
+                                <input type="text" id="address" class="w-11 h-full pl-3 border-none outline-none bg-input" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dialog__footer px-4 py-3 flex align-items-center justify-content-end bg-gray-100">
+                    <div id="cancel-business" class="w-5rem h-1rem px-3 py-2 text-center bg-white hover:bg-gray-100 cursor-pointer border-1 border-gray-300 border-round-sm">Hủy</div>
+                    <div id="save-business" class="w-5rem h-1rem px-3 py-2 ml-2 text-center bg-teal-300 hover:bg-teal-500 cursor-pointer border-round-sm">Lưu</div>
+                </div>
+            </div>
+        </div>
+        <!-- END BUSINESS INFORMATION FORM -->
+        
+        <!-- DIALOG -->
+        <div id="dialog" class="hidden align-items-center justify-content-center fixed top-0 right-0 bottom-0 left-0 bg-black-alpha-10 z-1">
+            <div class="w-5 h-auto border-round bg-white">
+                <div class="dialog__container p-4">
+                    <div class="dialog__header flex align-items-center justify-content-between mb-4">
+                        <div class="dialog__title text-2xl line-height-3 font-bold">Cảnh báo</div>
+                        <i id="close-dialog" class="pi pi-times cursor-pointer"></i>
+                    </div>
+                    <div class="dialog__body flex align-items-center my-3">
+                        <i class="pi pi-exclamation-triangle p-2 mr-4 border-round bg-yellow-300"></i>
+                        <div class="dialog__description">Bạn có chắc chắn muốn xóa bản ghi này ?</div>
+                    </div>
+                </div>
+                <div class="dialog__footer px-4 py-3 flex align-items-center justify-content-end border-round-bottom bg-gray-100">
+                    <div id="cancel-dialog" class="w-5rem h-1rem px-3 py-2 text-center bg-white hover:bg-gray-100 cursor-pointer border-1 border-gray-300 border-round-sm">Hủy</div>
+                    <div id="confirm-dialog" class="w-5rem h-1rem px-3 py-2 ml-2 text-center bg-teal-300 hover:bg-teal-500 cursor-pointer border-round-sm">Xác nhận</div>
+                </div>
+            </div>
+        </div>
+        <!-- END DIALOG -->
+
+        <!-- TOAST MESSAGE -->
+        <div id="toast-message" class="hidden fixed bottom-0 right-0 mb-4 mr-5 bg-black-alpha-10 z-1 shadow-1">
+            <div class="toast__container w-30rem border-round bg-white">
+                <div class="toast__body flex align-items-center justify-content-between p-3">
+                    <div class="flex align-items-center">
+                        <i class="toast__icon p-1 mr-2 border-circle pi"></i>
+                        <div class="toast__description"></div>
+                    </div>
+                    <div class="flex align-items-center">
+                        <div class="toast__undo underline cursor-pointer">Hoàn tác</div>
+                        <i class="toast__close pi pi-times ml-3 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END TOAST MESSAGE -->
+    </div>
+    <!-- END CONTAINER -->
+
+    <script type="module" src="./js/management_board/management_board.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+TP. Long Xuyên, An Giang
+TP. Bà Rịa, Bà Rịa - Vũng Tàu
+TP. Bạc Liêu, Bạc Liêu
+TP. Bắc Giang, Bắc Giang
+TP. Bắc Kạn, Bắc Kạn
+TP. Bắc Ninh, Bắc Ninh
+TP. Bến Tre, Bến Tre
+TP. Thủ Dầu Một, Bình Dương
+TP. Quy Nhơn, Bình Định
+TP. Đồng Xoài, Bình Phước
+TP. Phan Thiết, Bình Thuận
+TP. Cà Mau, Cà Mau
+TP. Cao Bằng, Cao Bằng
+Q. Ninh Kiều, Cần Thơ
+Q. Hải Châu, Đà Nẵng
+TP. Buôn Ma Thuật, Đắk Lắk
+TP. Gia Nghĩa, Đắk Nông
+TP. Điện Biên Phủ, Điện Biên Phủ
+TP. Biên Hòa, Đồng Nai
+TP. Cao Lãnh, Đồng Tháp
+TP. Pleiku, Gia Lai
+TP. Hà Giang, Hà Giang
+TP. Phủ Lý, Hà Nam
+Q. Hoàn Kiếm, Hà Nội
+TP. Hà Tĩnh, Hà Tĩnh
+TP. Hải Dương, Hải Dương
+Q. Hồng Bàng, Hải Phòng
+TP. Vị Thanh, Hậu Giang
+TP. Hòa Bình, Hòa Bình
+Q.1, TP. Hồ Chí Minh
+TP. Hưng Yên, Hưng Yên
+TP. Nha Trang, Khánh Hòa
+TP. Rạch Giá, Kiên Giang
+TP. Kon Tum, Kon Tum
+TP. Lai Châu, Lai Châu
+TP. Lạng Sơn, Lạng Sơn
+TP. Lào Cai, Lào Cai
+TP. Đà Lạt, Lâm Đồng
+TP. Tân An, Long An
+TP. Nam Định, Nam Định
+TP. Vinh, Nghệ An
+TP. Ninh Bình, Ninh Bình
+TP. Phan Rang - Tháp Chàm, Ninh Thuận
+TP. Việt Trì, Phú Thọ
+TP. Tuy Hòa, Phú Yên
+TP. Đồng Hới, Quảng Bình
+TP. Tam Kỳ, Quảng Nam
+TP. Quảng Ngãi, Quảng Ngãi
+TP. Hạ Long, Quảng Ninh
+TP. Đông Hà, Quảng Trị
+TP. Sóc Trăng, Sóc Trăng
+TP. Sơn La, Sơn La
+TP. Tây Ninh, Tây Ninh
+TP. Thái Bình, Thái Bình
+TP. Thái Nguyên, Thái Nguyên
+TP. Thanh Hóa, Thanh Hóa
+TP. Huế, Thừa Thiên Huế
+TP. Mỹ Tho, Tiền Giang
+TP. Trà Vinh, Trà Vinh
+TP. Tuyên Quang, Tuyên Quang
+TP. Vĩnh Long, Vĩnh Long
+TP. Vĩnh Yên, Vĩnh Phúc
+TP. Yên Bái, Yên Bái
+

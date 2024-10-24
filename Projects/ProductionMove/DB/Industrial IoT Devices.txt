@@ -1,0 +1,15 @@
+Aptomar
+ATrack trackers
+Centrak
+Bosch
+CargoSense
+DorsaVi ViSafe
+Filament
+GridConnect
+Impinj
+Rethink Robotics
+RoboCV
+Samsara Sensors
+Tachyus Sensors
+Wzzard Wireless Sensors
+Xerafy
